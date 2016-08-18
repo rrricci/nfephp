@@ -5031,7 +5031,7 @@ concessório</xs:documentation>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element ref="ds:Signature"/>
+			<xs:element ref="ds:Signature" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="TProtNFe">

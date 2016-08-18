@@ -229,7 +229,7 @@ class Pkcs12
         $password = '',
         $createFiles = true,
         $ignoreValidity = false,
-        $ignoreOwner = false
+        $ignoreOwner = true
     ) {
         if (! is_file($pathPfx)) {
             throw new Exception\InvalidArgumentException(

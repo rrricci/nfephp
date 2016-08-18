@@ -86,6 +86,7 @@ class MailNFe extends BaseMail
                 $ide->getElementsByTagName('dEmi')->item(0)->nodeValue;
         $data = date('d/m/Y', DateTime::convertSefazTimeToTimestamp($dhEmi));
         $vNF = $icmsTot->getElementsByTagName('vNF')->item(0)->nodeValue;
+		$vNF = number_format($vNF,2,",",".");
         $this->aMail[] = !empty($dest->getElementsByTagName('email')->item(0)->nodeValue) ?
                 $dest->getElementsByTagName('email')->item(0)->nodeValue :
                 '';
